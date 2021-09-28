@@ -1,3 +1,6 @@
+//question 2
+
+
 package lab_2;
 
 import java.util.Scanner;
