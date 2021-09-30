@@ -10,7 +10,7 @@ public class weightConverter {
         this.relativeGravity = relativeGravity;
     }
 
-    //class method
+    //convert method
     public void convert(int bodyWeight){
         System.out.println("Your Weight: " + this.relativeGravity * bodyWeight);
 
