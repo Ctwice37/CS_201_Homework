@@ -34,11 +34,25 @@ public class Income {
         else
             return this.commission * 0.0;
     }
+
+
+
+
+
     public void displayPay(){
+
         DecimalFormat df1 = new DecimalFormat("#.##");
+
+
         double pay = salary(this.hours) + commissionCalc(this.commission);
         System.out.println("Your pay this week was: \n\n$ " + df1.format(pay));
     }
+
+
+
+
+
+
 
     //Getters+Setters
     public double getHours() {
