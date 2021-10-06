@@ -22,6 +22,12 @@ public class indentation {
         else
             c = 1;
 
+
+        System.out.println("a = " + a +
+                "\nb = " + b +
+                "\nc = " + c);
+
+
         //________________________________
         // question 1.b
         //_________________________________
@@ -36,10 +42,6 @@ public class indentation {
         //________________________________
         // question 1.d
         //_________________________________
-
-        System.out.println("a = " + a +
-                            "\nb = " + b +
-                             "\nc = " + c);
 
     }
 }
