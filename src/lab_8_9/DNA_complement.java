@@ -17,7 +17,7 @@ public class DNA_complement {
         String sequence = "";
 
         do {
-
+           // String sequence = "";
             System.out.println("Give DNA sequence: ");
             sequence = input.nextLine();
             sequence = sequence.toUpperCase();
@@ -33,9 +33,6 @@ public class DNA_complement {
                     complement.setCharAt(i, c);
                 else
                     complement.setCharAt(i, g);
-
-
-
             }
             if (!sequence.equals(""))
                 System.out.println("complement: " + complement + "\n");

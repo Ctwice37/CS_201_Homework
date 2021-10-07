@@ -64,10 +64,20 @@ public class indentation {
 //                a = 1;
 //                b = 2;
 //        }else{
+//            b = 1;
+//            if(a == d)
+//                d = 3;
 //        }
-            String a = "abaiii";
-            String b = "beaa";
-        System.out.println(a.compareTo(b));
 
+//Question 3
 
-    }}
+        a) false
+        b) false
+        c) false
+        d) true
+        e) false
+        f) true
+        g) false
+        h) true
+
+    }}}
