@@ -1,8 +1,12 @@
 package lab_7;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class perfectNumber {
 
     public static void PerfectNumbers(int lowerBound, int upperBound) {
+        List<Integer> nums = new ArrayList<Integer>();
         String properDivisors = "";
         int sum = 0;
         int perfect = 0;
@@ -14,6 +18,7 @@ public class perfectNumber {
                     sum += j;
                     properDivisors += Integer.toString(j);
                     properDivisors += " ";
+                    nums.add(i);
                 }
 
 
@@ -21,15 +26,18 @@ public class perfectNumber {
                     System.out.println(i + " is perfect.");
                     perfect++;
                     String temp = "";
-                    System.out.println("Proper Divisors:");
-                    for (int z = properDivisors.length() - 1; z >= 0; z--) {
+                    System.out.print("Proper Divisors:\n" + i + " = ");
+                    for (int z = 0; z < properDivisors.length(); z++) {
                         if (properDivisors.charAt(z) != ' ')
-                            temp += properDivisors.charAt(z);
-                        System.out.print(temp + " ");
+                            System.out.print(properDivisors.charAt(z));
+                        else
+                            System.out.print(" + ");
+
                         temp = "";
 
-                    }
-                    System.out.println(" = " + i +"\n");
+
+                    }System.out.println("\n\n");
+
 
                 }else continue;
             }
