@@ -70,14 +70,14 @@ public class indentation {
 //        }
 
 //Question 3
+//
+//        a) false
+//        b) false
+//        c) false
+//        d) true
+//        e) false
+//        f) true
+//        g) false
+//        h) true
 
-        a) false
-        b) false
-        c) false
-        d) true
-        e) false
-        f) true
-        g) false
-        h) true
-
-    }}}
+    }}
