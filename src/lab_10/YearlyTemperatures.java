@@ -26,6 +26,7 @@ public class YearlyTemperatures {
 
 
         }
+
         public static void hottestColdestDayYear(double[] temperatures){
             for (int i = 0; i < temperatures.length; i++) {
                 if (hottestTempMonth < temperatures[i])
@@ -39,21 +40,25 @@ public class YearlyTemperatures {
         }
 
         public static double [] AvgTempMonth(double [] temperatures){
-        double sum = 0;
-        double average = 0;
-        int start_date = 0;
-        int addDays = 0;
-            for (int i = 0; i < monthLength.length; i++) {
-                start_date += addDays;
-                sum = 0;
+
+            double sum = 0;
+            double average = 0;
+            int dayOfYear = 0;
+
+            for (int c = 0; c < 12; c++) {
+                dayOfYear = monthLength[c];
+                dayOfYear = temperatures[]
+                for (int r = dayOfYear; r monthLength.length; r++) {
+                    sum += temperatures[r];
+
+
+                } average = sum / monthLength[c];
+                avgMonthTemp[c] = average;
+                sum = 0.0;
                 average = 0;
-                for (int j = start_date; j < monthLength[i]; j++) {
-                    sum +=temperatures[j];
 
 
-                }average = sum / monthLength[i];
-                avgMonthTemp[i] = average;
-                start_date += monthLength[i];
+            }
 
 
             } return avgMonthTemp;
