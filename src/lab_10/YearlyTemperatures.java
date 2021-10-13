@@ -22,11 +22,12 @@ public class YearlyTemperatures {
     public static void main(String[] args) {
         for (int i = 0; i < TempsYearly.length; i++) {
             TempsYearly[i] = -5;
-
         }
-        double [] temps = AvgTempMonth(TempsYearly);
-            for(double month : avgMonthTemp)
-                System.out.println(month);
+        //double [] temps = AvgTempMonth(TempsYearly);
+            //for(double month : avgMonthTemp)
+                //System.out.println(month);
+
+        System.out.println(tempOfDayOfMonth());
 
 
         }
@@ -90,17 +91,32 @@ public class YearlyTemperatures {
 
         }
 
-        public static double tempOfDayOfMonth(int month, int day){
+        public static double tempOfDayOfMonth() {
+            double temperature = 0;
+            int daysCount = 0;
+            int month = 0;
+            int day = 0;
             Scanner input = new Scanner(System.in);
             System.out.println("Temperature in What Month? ");
-            int month = input.nextInt();
+
+            int monthTest = input.nextInt() -1;
+            if(monthTest > 0 && monthTest <=12)
+                month = monthTest -1;
             System.out.println("Temperature on what day? ");
-            int day = input.nextInt();
+            int dayTest = input.nextInt();
+            if(dayTest > 0 && dayTest <= 31 )
+                day = dayTest -1;
 
-
-
+            if (month == 0)
+                temperature = TempsYearly[(day + 1)];
+            else{
+                for (int i = 0; i < month; i++) {
+                    daysCount += monthLength[i];
+                } temperature = TempsYearly[(daysCount + day + 1)];}
+            return temperature;
 
         }
+
 
             }
 
