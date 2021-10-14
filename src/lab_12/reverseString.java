@@ -3,7 +3,7 @@ package lab_12;
 public class reverseString {
     public static void main(String[] args) {
 
-        reverseString("hello", "", 0);
+        reverseString("Hello", "", 0);
     }
 
 
@@ -13,7 +13,7 @@ public class reverseString {
         else{
             reverseString(s, empty, index + 1);
             empty += Character.toString(s.charAt(index));
-            System.out.println(empty);
+            System.out.print(empty);
         }
     }
 }
